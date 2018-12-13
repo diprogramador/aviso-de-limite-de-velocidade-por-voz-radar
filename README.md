@@ -4,15 +4,19 @@
 #Criado em Python(especificamente em Qpython no Android)
 
 
-velocidade = float(input("Velocidade captado pelo radar km/h \033[32m"))
-if velocidade > 80)* 7
+velocidade = float(input("Velocidade captada pelo radar km/h \033[32m"))
+if velocidade > 80:
+multa = (velocidade-80) * 7
+
 import androidhelper
 
 droid = androidhelper.Android()
 message = ('MULTADO! Você excedeu o limite de velocidade 80 quilômetros por hora!')
 droid.ttsSpeak(message)
 print("\033[40m\n\n--------Pagar multa de R${:.2f}".format(multa))
+
 else:
+
 import androidhelper
 
 droid = androidhelper.Android()
