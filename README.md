@@ -8,9 +8,9 @@ velocidade = float(input("Velocidade captada pelo radar km/h \033[32m"))
 if velocidade > 80:
 multa = (velocidade-80) * 7
 
-import androidhelper
+import androidhelper           # Aciona comando de voz do Celular//
 
-droid = androidhelper.Android()
+droid = androidhelper.Android()   
 message = ('MULTADO! Você excedeu o limite de velocidade 80 quilômetros por hora!')
 droid.ttsSpeak(message)
 print("\033[40m\n\n--------Pagar multa de R${:.2f}".format(multa))
@@ -28,7 +28,7 @@ import androidhelper
 import time
 
 droid = androidhelper.Android()
-droid.ttsSpeak(time.strftime("%I %M %p"))
+droid.ttsSpeak(time.strftime("%I %M %p"))            # Aciona comando de voz do celular informando hora e data//
 
 
 
